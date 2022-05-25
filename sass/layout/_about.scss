@@ -1,0 +1,129 @@
+.about-us{
+    width: 100%;
+    margin-bottom: 82px;
+    &__container{
+        background: url(../img/grafic.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        position: relative;
+    }
+    .row{
+        display: flex;
+      
+        gap: 44px;
+    }
+    &__body{
+        padding-top: 80px;
+    }
+    &__title{
+        font-family: 'Garamond';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 59px;
+        line-height: 66px;
+        color: #161616;
+        margin-bottom: 32px;
+    }
+    &__text{
+        max-width: 570px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 34px;
+        color: #161616;
+        margin-bottom: 64px;
+        
+    }
+    &__button{
+        width: 210px;
+        height: 59px;
+    }
+    &__social-network{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        &__icon{
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen  and (max-width:1102px){
+        &__social-network{
+            display: none;
+        }
+    }
+    @media screen  and (max-width:831px){
+        &__body{
+            width: 100%;
+        }
+        &__title{
+           text-align: center;
+            font-size: 42px;
+            line-height: 47px;
+            margin-bottom: 32px;
+        }
+        &__text{
+            max-width: 344px;
+            margin: auto;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            margin-bottom: 64px;
+            
+        }
+        &__button{
+            margin: auto;
+        }
+        &__img{
+            display: none;
+        }
+    }
+    @media screen  and (max-width:450px){
+        margin-bottom: 72px;
+        &__container{
+            background: unset;
+           
+        }
+        &__body{
+            padding-top: 0;
+        }
+       
+        &__title{
+            max-width: 177px;
+            font-size: 25px;
+            line-height: 28px;
+            margin: auto;
+            margin-bottom: 16px;
+            
+        }
+        &__text{
+            font-size: 12px;
+            line-height: 20px;
+            max-width: 206px;
+            margin-bottom: 32px;
+            
+        }
+        &__button{
+            margin: auto;
+        }
+        &__img{
+            display: none;
+        }
+    }
+    
+}
+
+
+
+.social-network{
+    
+    &__icon{
+        margin-bottom: 20px;
+        svg:hover{
+            stroke:#B8926B;
+             fill:#B8926B;
+        }
+    }
+}

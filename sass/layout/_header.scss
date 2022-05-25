@@ -1,0 +1,115 @@
+.header{
+    width: 100%;
+    margin-bottom: 44px;
+    // border:1px solid red;
+    &__container{
+        min-height: 79px;
+        padding-top: 24px;
+       
+       .row{
+        display: flex;
+        align-items: center;
+       }
+        
+    }
+    &__burger{
+        display: none;
+        cursor: pointer;
+    }
+    &__logo{
+        // border:1px solid red;
+        flex-grow:2 ;
+       ;
+        img{
+            width: 117px;
+            height: 79px
+        }
+    }
+    &__menu{    
+        flex-grow:1 ;
+    }
+   
+    &__tel-number{
+        font-family: 'Garamond';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+        /* identical to box height */
+        
+        
+        color: #B8926B;
+        margin-left: 16px;
+    }
+
+}
+
+.menu{
+    
+    &__list{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom:0!important;
+       
+    }
+    &__item:not(:first-child){
+        margin-left: 48px;
+    }
+    &__item{
+        position: relative;
+        
+    }
+    
+    &__link{
+        font-family: 'Garamond';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 22px;
+        color: #161616;
+    }
+    &__item:hover::before{
+        content: '';
+        display: block;
+        width: 27px;
+        height: 2px;
+        background: #D8BFA9;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+    }
+}
+
+@media screen and (max-width:930px) {
+    .header{
+        &__menu{
+            display: none;
+            flex-grow: unset;
+        }
+        &__container{
+            .row{
+                justify-content: space-between;
+            }
+        }
+        &__logo{
+            flex-grow: unset;
+           img{
+             width: 100px;
+             height: 60px
+           }
+        }
+        &__burger{
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width:575px){
+ .header{
+     &__tel-number{
+         display: none;
+     }
+ }
+}

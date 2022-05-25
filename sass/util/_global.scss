@@ -1,0 +1,60 @@
+._container{
+    max-width: 1122px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+._main{
+    overflow: hidden;
+    background: #E5E5E5;
+    transition: all 300ms ease;
+    position: relative!important;
+}
+
+._btn{
+   
+    background: #69766D;
+    font-family: 'Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;  
+    color: #F6F6F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.open-menu{
+    
+    left: 0!important;
+}
+
+.menuMobileIsOpen{
+    
+background: rgba(54, 54, 54, 0.7)!important;
+}
+
+
+
+
+
+@media screen and (max-width:768px) {
+    ._container{
+        max-width: 659px;
+       
+    }
+}
+@media screen and (max-width:320px) {
+    ._container{
+        max-width: 290px;
+        padding: 0 0;
+        margin: auto;
+    }
+}
+@media screen and (max-width:450px) {
+    ._main{
+       
+        background: white;
+    }
+}
